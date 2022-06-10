@@ -224,6 +224,30 @@ src/Memory.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Memory.c.s
 .PHONY : src/Memory.c.s
 
+src/PDP-8.obj: src/PDP-8.c.obj
+.PHONY : src/PDP-8.obj
+
+# target to build an object file
+src/PDP-8.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/PDP-8.c.obj
+.PHONY : src/PDP-8.c.obj
+
+src/PDP-8.i: src/PDP-8.c.i
+.PHONY : src/PDP-8.i
+
+# target to preprocess a source file
+src/PDP-8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/PDP-8.c.i
+.PHONY : src/PDP-8.c.i
+
+src/PDP-8.s: src/PDP-8.c.s
+.PHONY : src/PDP-8.s
+
+# target to generate assembly for a file
+src/PDP-8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/PDP-8.c.s
+.PHONY : src/PDP-8.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... src/Memory.obj
 	@echo ... src/Memory.i
 	@echo ... src/Memory.s
+	@echo ... src/PDP-8.obj
+	@echo ... src/PDP-8.i
+	@echo ... src/PDP-8.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

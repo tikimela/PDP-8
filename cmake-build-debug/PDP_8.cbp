@@ -83,6 +83,9 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/ControlUnit.c">
 			<Option target="PDP_8"/>
 		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/ControlUnit.h">
+			<Option target="PDP_8"/>
+		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/Decoder.h">
 			<Option target="PDP_8"/>
 		</Unit>
@@ -95,7 +98,7 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Memory.h">
 			<Option target="PDP_8"/>
 		</Unit>
-		<Unit filename="H:/Programiranje/PDP-8/src/PDP-8.h">
+		<Unit filename="H:/Programiranje/PDP-8/src/PDP-8.c">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/logic.h">

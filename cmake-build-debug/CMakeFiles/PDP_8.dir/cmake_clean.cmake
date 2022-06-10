@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj"
   "CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
   "CMakeFiles/PDP_8.dir/src/Memory.c.obj"
+  "CMakeFiles/PDP_8.dir/src/PDP-8.c.obj"
   "CMakeFiles/PDP_8.dir/src/main.c.obj"
   "PDP_8.exe"
   "PDP_8.exe.manifest"

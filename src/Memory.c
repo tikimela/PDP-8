@@ -36,6 +36,4 @@ void OprAssign(){
     CopyReg(MBR,OPR,3,1);
 }
 
-int add
-
 
