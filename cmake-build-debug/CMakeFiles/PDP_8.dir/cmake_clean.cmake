@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PDP_8.dir/src/Header.c.obj"
   "CMakeFiles/PDP_8.dir/src/main.c.obj"
   "PDP_8.exe"
   "PDP_8.exe.manifest"
