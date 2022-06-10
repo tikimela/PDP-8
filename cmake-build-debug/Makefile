@@ -128,6 +128,54 @@ PDP_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/build
 .PHONY : PDP_8/fast
 
+src/ALU.obj: src/ALU.c.obj
+.PHONY : src/ALU.obj
+
+# target to build an object file
+src/ALU.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.obj
+.PHONY : src/ALU.c.obj
+
+src/ALU.i: src/ALU.c.i
+.PHONY : src/ALU.i
+
+# target to preprocess a source file
+src/ALU.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.i
+.PHONY : src/ALU.c.i
+
+src/ALU.s: src/ALU.c.s
+.PHONY : src/ALU.s
+
+# target to generate assembly for a file
+src/ALU.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.s
+.PHONY : src/ALU.c.s
+
+src/ControlUnit.obj: src/ControlUnit.c.obj
+.PHONY : src/ControlUnit.obj
+
+# target to build an object file
+src/ControlUnit.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj
+.PHONY : src/ControlUnit.c.obj
+
+src/ControlUnit.i: src/ControlUnit.c.i
+.PHONY : src/ControlUnit.i
+
+# target to preprocess a source file
+src/ControlUnit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ControlUnit.c.i
+.PHONY : src/ControlUnit.c.i
+
+src/ControlUnit.s: src/ControlUnit.c.s
+.PHONY : src/ControlUnit.s
+
+# target to generate assembly for a file
+src/ControlUnit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ControlUnit.c.s
+.PHONY : src/ControlUnit.c.s
+
 src/Decorder.obj: src/Decorder.c.obj
 .PHONY : src/Decorder.obj
 
@@ -209,6 +257,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PDP_8
+	@echo ... src/ALU.obj
+	@echo ... src/ALU.i
+	@echo ... src/ALU.s
+	@echo ... src/ControlUnit.obj
+	@echo ... src/ControlUnit.i
+	@echo ... src/ControlUnit.s
 	@echo ... src/Decorder.obj
 	@echo ... src/Decorder.i
 	@echo ... src/Decorder.s

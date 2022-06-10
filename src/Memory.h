@@ -15,4 +15,15 @@ int AC[16];
 
 int RAM[4096][WORD_SIZE];
 
+int SC [2] = {0,0};
+
+int binToDec(int *bin, int n);
+
+
+
+void CopyReg(int *a, int *b, int n, int m);
+int AddressFetch();
+void ReadMem();
+void OprAssign();
+
 #endif //PDP_8_MEMORY_H
