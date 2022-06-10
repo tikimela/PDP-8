@@ -128,29 +128,53 @@ PDP_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/build
 .PHONY : PDP_8/fast
 
-src/Header.obj: src/Header.c.obj
-.PHONY : src/Header.obj
+src/Decorder.obj: src/Decorder.c.obj
+.PHONY : src/Decorder.obj
 
 # target to build an object file
-src/Header.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Header.c.obj
-.PHONY : src/Header.c.obj
+src/Decorder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Decorder.c.obj
+.PHONY : src/Decorder.c.obj
 
-src/Header.i: src/Header.c.i
-.PHONY : src/Header.i
+src/Decorder.i: src/Decorder.c.i
+.PHONY : src/Decorder.i
 
 # target to preprocess a source file
-src/Header.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Header.c.i
-.PHONY : src/Header.c.i
+src/Decorder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Decorder.c.i
+.PHONY : src/Decorder.c.i
 
-src/Header.s: src/Header.c.s
-.PHONY : src/Header.s
+src/Decorder.s: src/Decorder.c.s
+.PHONY : src/Decorder.s
 
 # target to generate assembly for a file
-src/Header.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Header.c.s
-.PHONY : src/Header.c.s
+src/Decorder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Decorder.c.s
+.PHONY : src/Decorder.c.s
+
+src/Memory.obj: src/Memory.c.obj
+.PHONY : src/Memory.obj
+
+# target to build an object file
+src/Memory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Memory.c.obj
+.PHONY : src/Memory.c.obj
+
+src/Memory.i: src/Memory.c.i
+.PHONY : src/Memory.i
+
+# target to preprocess a source file
+src/Memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Memory.c.i
+.PHONY : src/Memory.c.i
+
+src/Memory.s: src/Memory.c.s
+.PHONY : src/Memory.s
+
+# target to generate assembly for a file
+src/Memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Memory.c.s
+.PHONY : src/Memory.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -185,9 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PDP_8
-	@echo ... src/Header.obj
-	@echo ... src/Header.i
-	@echo ... src/Header.s
+	@echo ... src/Decorder.obj
+	@echo ... src/Decorder.i
+	@echo ... src/Decorder.s
+	@echo ... src/Memory.obj
+	@echo ... src/Memory.i
+	@echo ... src/Memory.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

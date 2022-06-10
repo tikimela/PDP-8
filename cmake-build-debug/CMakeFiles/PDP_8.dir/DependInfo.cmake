@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "H:/Programiranje/PDP-8/src/Header.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Header.c.obj"
+  "H:/Programiranje/PDP-8/src/Decorder.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
+  "H:/Programiranje/PDP-8/src/Memory.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Memory.c.obj"
   "H:/Programiranje/PDP-8/src/main.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

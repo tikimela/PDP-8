@@ -77,7 +77,10 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Decoder.h">
 			<Option target="PDP_8"/>
 		</Unit>
-		<Unit filename="H:/Programiranje/PDP-8/src/Header.c">
+		<Unit filename="H:/Programiranje/PDP-8/src/Decorder.c">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/Memory.c">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/Memory.h">
