@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "PDP-8.h"
 
 int main() {
-    printf("Hello, World!\n");
+    boot();
     return 0;
 }

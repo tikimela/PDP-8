@@ -117,18 +117,18 @@ CMakeFiles/PDP_8.dir/src/ControlUnit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/ControlUnit.c.s"
 	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\ControlUnit.c -o CMakeFiles\PDP_8.dir\src\ControlUnit.c.s
 
-CMakeFiles/PDP_8.dir/src/ALU.c.obj: CMakeFiles/PDP_8.dir/flags.make
-CMakeFiles/PDP_8.dir/src/ALU.c.obj: ../src/ALU.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PDP_8.dir/src/ALU.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PDP_8.dir\src\ALU.c.obj -c H:\Programiranje\PDP-8\src\ALU.c
+CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj: CMakeFiles/PDP_8.dir/flags.make
+CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj: ../src/Arithmetic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PDP_8.dir\src\Arithmetic.c.obj -c H:\Programiranje\PDP-8\src\Arithmetic.c
 
-CMakeFiles/PDP_8.dir/src/ALU.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PDP_8.dir/src/ALU.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\Programiranje\PDP-8\src\ALU.c > CMakeFiles\PDP_8.dir\src\ALU.c.i
+CMakeFiles/PDP_8.dir/src/Arithmetic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PDP_8.dir/src/Arithmetic.c.i"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\Programiranje\PDP-8\src\Arithmetic.c > CMakeFiles\PDP_8.dir\src\Arithmetic.c.i
 
-CMakeFiles/PDP_8.dir/src/ALU.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/ALU.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\ALU.c -o CMakeFiles\PDP_8.dir\src\ALU.c.s
+CMakeFiles/PDP_8.dir/src/Arithmetic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/Arithmetic.c.s"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\Arithmetic.c -o CMakeFiles\PDP_8.dir\src\Arithmetic.c.s
 
 CMakeFiles/PDP_8.dir/src/PDP-8.c.obj: CMakeFiles/PDP_8.dir/flags.make
 CMakeFiles/PDP_8.dir/src/PDP-8.c.obj: ../src/PDP-8.c
@@ -143,14 +143,28 @@ CMakeFiles/PDP_8.dir/src/PDP-8.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/PDP-8.c.s"
 	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\PDP-8.c -o CMakeFiles\PDP_8.dir\src\PDP-8.c.s
 
+CMakeFiles/PDP_8.dir/src/Logic.c.obj: CMakeFiles/PDP_8.dir/flags.make
+CMakeFiles/PDP_8.dir/src/Logic.c.obj: ../src/Logic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PDP_8.dir/src/Logic.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PDP_8.dir\src\Logic.c.obj -c H:\Programiranje\PDP-8\src\Logic.c
+
+CMakeFiles/PDP_8.dir/src/Logic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PDP_8.dir/src/Logic.c.i"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\Programiranje\PDP-8\src\Logic.c > CMakeFiles\PDP_8.dir\src\Logic.c.i
+
+CMakeFiles/PDP_8.dir/src/Logic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/Logic.c.s"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\Logic.c -o CMakeFiles\PDP_8.dir\src\Logic.c.s
+
 # Object files for target PDP_8
 PDP_8_OBJECTS = \
 "CMakeFiles/PDP_8.dir/src/main.c.obj" \
 "CMakeFiles/PDP_8.dir/src/Decorder.c.obj" \
 "CMakeFiles/PDP_8.dir/src/Memory.c.obj" \
 "CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj" \
-"CMakeFiles/PDP_8.dir/src/ALU.c.obj" \
-"CMakeFiles/PDP_8.dir/src/PDP-8.c.obj"
+"CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj" \
+"CMakeFiles/PDP_8.dir/src/PDP-8.c.obj" \
+"CMakeFiles/PDP_8.dir/src/Logic.c.obj"
 
 # External object files for target PDP_8
 PDP_8_EXTERNAL_OBJECTS =
@@ -159,13 +173,14 @@ PDP_8.exe: CMakeFiles/PDP_8.dir/src/main.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/Decorder.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/Memory.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj
-PDP_8.exe: CMakeFiles/PDP_8.dir/src/ALU.c.obj
+PDP_8.exe: CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/PDP-8.c.obj
+PDP_8.exe: CMakeFiles/PDP_8.dir/src/Logic.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/build.make
 PDP_8.exe: CMakeFiles/PDP_8.dir/linklibs.rsp
 PDP_8.exe: CMakeFiles/PDP_8.dir/objects1.rsp
 PDP_8.exe: CMakeFiles/PDP_8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable PDP_8.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable PDP_8.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PDP_8.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

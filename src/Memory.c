@@ -1,6 +1,27 @@
 #include "math.h"
 #include "Memory.h"
 
+int PC[12];
+
+int I;
+int OPR[3];
+int MAR[12];
+
+int MBR[WORD_SIZE];
+
+int E;
+int AC[WORD_SIZE];
+
+int RAM[4096][WORD_SIZE];
+
+bool S = false;
+int F;
+int R;
+int SC [2] = {0,0};
+int t[4] = {0, 0, 0, 0};
+int FR[2] = {0,0};
+int q[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+int c[4] = {0, 0, 0, 0};
 
 void CopyReg(int *a, int *b, int n, int m){
     //kopira iz jednog u drugi registar
@@ -11,7 +32,7 @@ void CopyReg(int *a, int *b, int n, int m){
 }
 
 int binToDec(int *bin, int n){
-    int dec, j = 0;
+    int dec = 0, j = 0;
     for(int i =  n - 1; i > 0; i--){
         dec += bin[i] * pow(2, j);
         j++;
@@ -19,12 +40,12 @@ int binToDec(int *bin, int n){
     return dec;
 }
 
-int AddressFetch(){
+void AddressFetch(){
     //uzima adresu iz PC i stavlja u MAR
     CopyReg(PC,MAR,12,0);
 }
 
-int ValueFetch(){
+void ValueFetch(){
     //for indirect cycle
     CopyReg(MBR,MAR,12,4);
 }
@@ -49,7 +70,7 @@ int IsZero(int *a, int n){
 }*/
 
 void OprAssign(){
-    CopyReg(MBR,I,1,0);
+    CopyReg(MBR,&I,1,0);
     CopyReg(MBR,OPR,3,1);
 }
 
@@ -94,7 +115,7 @@ void CirculateShift(int n){
     CopyReg(b,AC,WORD_SIZE,0);
 }
 
-int IsPositive(int *a,int n){
+int IsPositive(int *a){
     if(a[0] == 0){
         return 1;
     }

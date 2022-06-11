@@ -7,7 +7,7 @@
 #ifndef PDP_8_CONTROLUNIT_H
 #define PDP_8_CONTROLUNIT_H
 
-bool S = false;
+
 
 void fetchCycle();
 void indirectCycle();

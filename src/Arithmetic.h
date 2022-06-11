@@ -1,6 +1,8 @@
 #ifndef PDP_8_ARITHMETIC_H
 #define PDP_8_ARITHMETIC_H
 
+#include "Logic.h"
+
 typedef struct monoSumVal{
     int monoSum, monoCarry;
 } monoSumVal;

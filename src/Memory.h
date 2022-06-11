@@ -3,41 +3,42 @@
 #define PDP_8_MEMORY_H
 #define WORD_SIZE 16 //google kaze da je PDP - 8 12bit - ni racunar a ne 16 te za svaki slucaj da mogu da promijenim
 
+#include "stdbool.h"
 
-int PC[12];
+extern int PC[12];
 
-int I;
-int OPR[3];
-int MAR[12];
+extern int I;
+extern int OPR[3];
+extern int MAR[12];
 
-int MBR[WORD_SIZE];
+extern int MBR[WORD_SIZE];
 
-int E;
-int AC[WORD_SIZE];
+extern int E;
+extern int AC[WORD_SIZE];
 
-int RAM[4096][WORD_SIZE];
+extern int RAM[4096][WORD_SIZE];
 
-int F;
-int R;
-int SC [2] = {0,0};
-int t[4] = {0, 0, 0, 0};
-int FR[2] = {0,0};
-int q[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-int c[4] = {0, 0, 0, 0};
+extern bool S;
+extern int F;
+extern int R;
+extern int SC[2];
+extern int t[4];
+extern int FR[2];
+extern int q[8];
+extern int c[4];
+
+
 int binToDec(int *bin, int n);
-
-
-
 void CopyReg(int *a, int *b, int n, int m);
-int AddressFetch();
-int ValueFetch();
+void AddressFetch();
+void ValueFetch();
 int Address();
-void ReadMem();
+//void ReadMem();
 void OprAssign();
 int IsZero(int *a, int n);
-void Clear();
-void Complement();
+void Clear(int *a, int n);
+void Complement(int *a, int n);
 void CirculateShift(int n);
-int IsPositive(int *a,int n);
+int IsPositive(int *a);
 
 #endif //PDP_8_MEMORY_H

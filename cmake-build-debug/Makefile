@@ -128,29 +128,29 @@ PDP_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/build
 .PHONY : PDP_8/fast
 
-src/ALU.obj: src/ALU.c.obj
-.PHONY : src/ALU.obj
+src/Arithmetic.obj: src/Arithmetic.c.obj
+.PHONY : src/Arithmetic.obj
 
 # target to build an object file
-src/ALU.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.obj
-.PHONY : src/ALU.c.obj
+src/Arithmetic.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj
+.PHONY : src/Arithmetic.c.obj
 
-src/ALU.i: src/ALU.c.i
-.PHONY : src/ALU.i
+src/Arithmetic.i: src/Arithmetic.c.i
+.PHONY : src/Arithmetic.i
 
 # target to preprocess a source file
-src/ALU.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.i
-.PHONY : src/ALU.c.i
+src/Arithmetic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Arithmetic.c.i
+.PHONY : src/Arithmetic.c.i
 
-src/ALU.s: src/ALU.c.s
-.PHONY : src/ALU.s
+src/Arithmetic.s: src/Arithmetic.c.s
+.PHONY : src/Arithmetic.s
 
 # target to generate assembly for a file
-src/ALU.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/ALU.c.s
-.PHONY : src/ALU.c.s
+src/Arithmetic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Arithmetic.c.s
+.PHONY : src/Arithmetic.c.s
 
 src/ControlUnit.obj: src/ControlUnit.c.obj
 .PHONY : src/ControlUnit.obj
@@ -199,6 +199,30 @@ src/Decorder.s: src/Decorder.c.s
 src/Decorder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Decorder.c.s
 .PHONY : src/Decorder.c.s
+
+src/Logic.obj: src/Logic.c.obj
+.PHONY : src/Logic.obj
+
+# target to build an object file
+src/Logic.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Logic.c.obj
+.PHONY : src/Logic.c.obj
+
+src/Logic.i: src/Logic.c.i
+.PHONY : src/Logic.i
+
+# target to preprocess a source file
+src/Logic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Logic.c.i
+.PHONY : src/Logic.c.i
+
+src/Logic.s: src/Logic.c.s
+.PHONY : src/Logic.s
+
+# target to generate assembly for a file
+src/Logic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Logic.c.s
+.PHONY : src/Logic.c.s
 
 src/Memory.obj: src/Memory.c.obj
 .PHONY : src/Memory.obj
@@ -281,15 +305,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PDP_8
-	@echo ... src/ALU.obj
-	@echo ... src/ALU.i
-	@echo ... src/ALU.s
+	@echo ... src/Arithmetic.obj
+	@echo ... src/Arithmetic.i
+	@echo ... src/Arithmetic.s
 	@echo ... src/ControlUnit.obj
 	@echo ... src/ControlUnit.i
 	@echo ... src/ControlUnit.s
 	@echo ... src/Decorder.obj
 	@echo ... src/Decorder.i
 	@echo ... src/Decorder.s
+	@echo ... src/Logic.obj
+	@echo ... src/Logic.i
+	@echo ... src/Logic.s
 	@echo ... src/Memory.obj
 	@echo ... src/Memory.i
 	@echo ... src/Memory.s

@@ -74,10 +74,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/Programiranje/PDP-8/src/ALU.c">
+		<Unit filename="H:/Programiranje/PDP-8/src/Arithmetic.c">
 			<Option target="PDP_8"/>
 		</Unit>
-		<Unit filename="H:/Programiranje/PDP-8/src/ALU.h">
+		<Unit filename="H:/Programiranje/PDP-8/src/Arithmetic.h">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/ControlUnit.c">
@@ -92,6 +92,12 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Decorder.c">
 			<Option target="PDP_8"/>
 		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/Logic.c">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/Logic.h">
+			<Option target="PDP_8"/>
+		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/Memory.c">
 			<Option target="PDP_8"/>
 		</Unit>
@@ -101,7 +107,7 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/PDP-8.c">
 			<Option target="PDP_8"/>
 		</Unit>
-		<Unit filename="H:/Programiranje/PDP-8/src/logic.h">
+		<Unit filename="H:/Programiranje/PDP-8/src/PDP-8.h">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/main.c">

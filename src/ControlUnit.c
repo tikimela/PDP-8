@@ -136,13 +136,13 @@ void RegisterOprPicker(){
     }
     else if(MBR[11] == 1){
         //SPA
-        if(IsPositive(AC,WORD_SIZE) == 1){
+        if(IsPositive(AC) == 1){
             increment(PC,12);
         }
     }
     else if(MBR[12] == 1){
         //SNA
-        if(IsPositive(AC,WORD_SIZE) == 0){
+        if(IsPositive(AC) == 0){
             increment(PC,12);
         }
     }
@@ -154,7 +154,7 @@ void RegisterOprPicker(){
     }
     else if(MBR[14] == 1){
         //SZE
-        if(E = 0){
+        if(E == 0){
             increment(PC,12);
         }
     }
