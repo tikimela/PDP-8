@@ -200,6 +200,30 @@ src/Decorder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Decorder.c.s
 .PHONY : src/Decorder.c.s
 
+src/I-O.obj: src/I-O.c.obj
+.PHONY : src/I-O.obj
+
+# target to build an object file
+src/I-O.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/I-O.c.obj
+.PHONY : src/I-O.c.obj
+
+src/I-O.i: src/I-O.c.i
+.PHONY : src/I-O.i
+
+# target to preprocess a source file
+src/I-O.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/I-O.c.i
+.PHONY : src/I-O.c.i
+
+src/I-O.s: src/I-O.c.s
+.PHONY : src/I-O.s
+
+# target to generate assembly for a file
+src/I-O.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/I-O.c.s
+.PHONY : src/I-O.c.s
+
 src/Logic.obj: src/Logic.c.obj
 .PHONY : src/Logic.obj
 
@@ -314,6 +338,9 @@ help:
 	@echo ... src/Decorder.obj
 	@echo ... src/Decorder.i
 	@echo ... src/Decorder.s
+	@echo ... src/I-O.obj
+	@echo ... src/I-O.i
+	@echo ... src/I-O.s
 	@echo ... src/Logic.obj
 	@echo ... src/Logic.i
 	@echo ... src/Logic.s

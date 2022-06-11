@@ -27,4 +27,5 @@ void boot(){
         }
         increment(SC,2);
     }
+    DumpMemory();
 }

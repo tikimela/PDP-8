@@ -92,6 +92,12 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Decorder.c">
 			<Option target="PDP_8"/>
 		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/I - O.h">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/I-O.c">
+			<Option target="PDP_8"/>
+		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/Logic.c">
 			<Option target="PDP_8"/>
 		</Unit>
