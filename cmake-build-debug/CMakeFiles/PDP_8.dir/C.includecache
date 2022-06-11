@@ -6,49 +6,19 @@
 
 #IncludeRegexTransform: 
 
-H:/Programiranje/PDP-8/src/Arithmetic.h
-Logic.h
-H:/Programiranje/PDP-8/src/Logic.h
-
-H:/Programiranje/PDP-8/src/ControlUnit.c
-ControlUnit.h
-H:/Programiranje/PDP-8/src/ControlUnit.h
-
-H:/Programiranje/PDP-8/src/ControlUnit.h
+H:/Programiranje/PDP-8/src/I-O.c
+I-O.h
+H:/Programiranje/PDP-8/src/I-O.h
 Memory.h
 H:/Programiranje/PDP-8/src/Memory.h
-Arithmetic.h
-H:/Programiranje/PDP-8/src/Arithmetic.h
-Decoder.h
-H:/Programiranje/PDP-8/src/Decoder.h
-stdbool.h
--
-Logic.h
-H:/Programiranje/PDP-8/src/Logic.h
 
-H:/Programiranje/PDP-8/src/Decoder.h
-
-H:/Programiranje/PDP-8/src/Logic.h
-
-H:/Programiranje/PDP-8/src/Memory.c
-math.h
-H:/Programiranje/PDP-8/src/math.h
-Memory.h
-H:/Programiranje/PDP-8/src/Memory.h
+H:/Programiranje/PDP-8/src/I-O.h
+inttypes.h
+H:/Programiranje/PDP-8/src/inttypes.h
+stdio.h
+H:/Programiranje/PDP-8/src/stdio.h
 
 H:/Programiranje/PDP-8/src/Memory.h
 stdbool.h
 H:/Programiranje/PDP-8/src/stdbool.h
-
-H:/Programiranje/PDP-8/src/PDP-8.c
-PDP-8.h
-H:/Programiranje/PDP-8/src/PDP-8.h
-
-H:/Programiranje/PDP-8/src/PDP-8.h
-ControlUnit.h
-H:/Programiranje/PDP-8/src/ControlUnit.h
-
-H:/Programiranje/PDP-8/src/main.c
-PDP-8.h
-H:/Programiranje/PDP-8/src/PDP-8.h
 

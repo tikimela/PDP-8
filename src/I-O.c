@@ -7,7 +7,7 @@ void DumpMemory(){
 
     for(int i = 0; i < 4096 * WORD_SIZE; i = i+8){
 
-        uint8_t byte = 0
+        uint8_t byte = 0;
 
         if(RAM[i+0] == 1){
             byte = byte | 1UL << 7;
@@ -38,3 +38,4 @@ void DumpMemory(){
     fclose(file);
 
 }
+
