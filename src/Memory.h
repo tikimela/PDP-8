@@ -23,6 +23,7 @@ int SC [2] = {0,0};
 int t[4] = {0, 0, 0, 0};
 int FR[2] = {0,0};
 int q[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+int c[4] = {0, 0, 0, 0};
 int binToDec(int *bin, int n);
 
 

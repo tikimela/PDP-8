@@ -1,5 +1,26 @@
 #include "ControlUnit.h"
 
-void boot(S){
-    Decoder2x4(SC,t,S);
+
+void boot(){
+    while(S){
+        Decoder2x4(SC,t,S);
+        Decoder3x8(OPR,q,S);
+        FR[0] = F;
+        FR[1] = R;
+        Decoder2x4(FR,c,S);
+
+        if(c[0] == 1){
+            fetchCycle();
+        }
+        else if(c[1] == 1){
+            indirectCycle();
+        }
+        else if(c[2] == 1){
+            executeCycle();
+        }
+        else if(c[3] == 1){
+            interuptCycle();
+        }
+
+    }
 }

@@ -8,6 +8,9 @@
 
 bool S = false;
 
-
+void fetchCycle();
+void indirectCycle();
+void executeCycle();
+void interruptCycle();
 
 #endif //PDP_8_CONTROLUNIT_H
