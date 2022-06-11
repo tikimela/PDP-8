@@ -7,5 +7,6 @@
 
 
 void DumpMemory();
+void LoadProgram();
 
 #endif //PDP_8_I_O_H

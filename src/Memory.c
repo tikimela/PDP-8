@@ -23,10 +23,10 @@ int FR[2] = {0,0};
 int q[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 int c[4] = {0, 0, 0, 0};
 
-void CopyReg(int *a, int *b, int n, int m){
+void CopyReg(int *a, int *b, int n){
     //kopira iz jednog u drugi registar
     //a - to be copied; b - copy; n - word length; m - from where to start copying
-    for(int i = m; i < n + m; i++){
+    for(int i = 0; i < n; i++){
         b[i] = a[i];
     }
 }
@@ -42,12 +42,12 @@ int binToDec(int *bin, int n){
 
 void AddressFetch(){
     //uzima adresu iz PC i stavlja u MAR
-    CopyReg(PC,MAR,12,0);
+    CopyReg(PC,MAR,12);
 }
 
 void ValueFetch(){
     //for indirect cycle
-    CopyReg(MBR,MAR,12,4);
+    CopyReg(&MBR[4],MAR,12);
 }
 
 int Address(){
@@ -70,8 +70,8 @@ int IsZero(int *a, int n){
 }*/
 
 void OprAssign(){
-    CopyReg(MBR,&I,1,0);
-    CopyReg(MBR,OPR,3,1);
+    CopyReg(MBR,&I,1);
+    CopyReg(&MBR[1],OPR,3);
 }
 
 void Clear(int *a, int n){
@@ -112,7 +112,7 @@ void CirculateShift(int n){
         }
     }
 
-    CopyReg(b,AC,WORD_SIZE,0);
+    CopyReg(b,AC,WORD_SIZE);
 }
 
 int IsPositive(int *a){

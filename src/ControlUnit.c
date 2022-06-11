@@ -5,7 +5,7 @@ void fetchCycle(){
         AddressFetch();
     }
     else if(t[1] == 1){
-        CopyReg(RAM[Address()],MBR,WORD_SIZE,0);
+        CopyReg(RAM[Address()],MBR,WORD_SIZE);
         increment(PC,12);
     }
     else if(t[2] == 1){
@@ -26,7 +26,7 @@ void indirectCycle(){
         ValueFetch();
     }
     else if(t[1] == 1){
-        CopyReg(RAM[Address()],MBR,WORD_SIZE,0);
+        CopyReg(RAM[Address()],MBR,WORD_SIZE);
     }
     else if(t[2] == 1){
     }
@@ -41,7 +41,7 @@ void MemoryExecuteCycle(){
         ValueFetch();
     }
     else if(t[1] == 1){
-        CopyReg(RAM[Address()],MBR,WORD_SIZE,0);
+        CopyReg(RAM[Address()],MBR,WORD_SIZE);
     }
     else if(t[2] == 1){
         MemoryOprPicker();
@@ -79,21 +79,21 @@ void MemoryOprPicker(){
     }
     else if(q[2] == 1){
         //LDA
-        CopyReg(RAM[Address()],AC,WORD_SIZE,0);
+        CopyReg(RAM[Address()],AC,WORD_SIZE);
     }
     else if(q[3] == 1){
         //STA
-        CopyReg(AC,RAM[Address()],WORD_SIZE,0);
+        CopyReg(AC,RAM[Address()],WORD_SIZE);
     }
     else if(q[4] == 1){
         //BUN
-        CopyReg(MBR,PC,12,4);
+        CopyReg(&MBR[4],PC,12);
     }
     else if(q[5] == 1){
         //BSA
-        CopyReg(PC,RAM[Address()]+4,12,0);
+        CopyReg(PC,RAM[Address()]+4,12);
         increment(MAR,12);
-        CopyReg(MAR,PC,12,0);
+        CopyReg(MAR,PC,12);
     }
     else if(q[6] == 1){
         //ISz
@@ -160,6 +160,6 @@ void RegisterOprPicker(){
     }
     else if(MBR[15] == 1){
         //HLT
-        S = 0;
+        S = false;
     }
 }

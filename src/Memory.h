@@ -29,7 +29,7 @@ extern int c[4];
 
 
 int binToDec(int *bin, int n);
-void CopyReg(int *a, int *b, int n, int m);
+void CopyReg(int *a, int *b, int n);
 void AddressFetch();
 void ValueFetch();
 int Address();
