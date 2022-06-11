@@ -1,5 +1,5 @@
-#ifndef PDP_8_ALU_H
-#define PDP_8_ALU_H
+#ifndef PDP_8_ARITHMETIC_H
+#define PDP_8_ARITHMETIC_H
 
 typedef struct monoSumVal{
     int monoSum, monoCarry;
@@ -18,4 +18,4 @@ int add(int *a, int *b, int *f, int carry, int n);
 
 void increment(int *a,int n);
 
-#endif //PDP_8_ALU_H
+#endif //PDP_8_ARITHMETIC_H

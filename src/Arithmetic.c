@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include "ALU.h"
-#include "logic.h"
+#include "Arithmetic.h"
+#include "Logic.h"
 
 
 monoSumVal wholeSum(int a, int b, int carry){

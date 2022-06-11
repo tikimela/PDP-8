@@ -21,6 +21,6 @@ void boot(){
         else if(c[3] == 1){
             interuptCycle();
         }
-
+        increment(SC,2);
     }
 }

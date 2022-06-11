@@ -22,14 +22,22 @@ int binToDec(int *bin, int n){
 int AddressFetch(){
     //uzima adresu iz PC i stavlja u MAR
     CopyReg(PC,MAR,12,0);
+}
+
+int ValueFetch(){
+    //for indirect cycle
+    CopyReg(MBR,MAR,12,4);
+}
+
+int Address(){
     int address = binToDec(MAR,12);
     return address;
 }
 
-void ReadMem(){
+/*void ReadMem(function()){
     //cita liniju koda iz RAM-a sa adrese iz MAR-a
     CopyReg(RAM[AddressFetch()],MBR,16,0);
-}
+}*/
 
 void OprAssign(){
     CopyReg(MBR,I,1,0);

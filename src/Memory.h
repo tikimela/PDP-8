@@ -1,7 +1,7 @@
 
 #ifndef PDP_8_MEMORY_H
 #define PDP_8_MEMORY_H
-#define WORD_SIZE 16
+#define WORD_SIZE 16 //google kaze da je PDP - 8 12bit - ni racunar a ne 16 te za svaki slucaj da mogu da promijenim
 
 
 int PC[12];
@@ -13,7 +13,7 @@ int MAR[12];
 int MBR[WORD_SIZE];
 
 int E;
-int AC[16];
+int AC[WORD_SIZE];
 
 int RAM[4096][WORD_SIZE];
 
@@ -30,6 +30,8 @@ int binToDec(int *bin, int n);
 
 void CopyReg(int *a, int *b, int n, int m);
 int AddressFetch();
+int ValueFetch();
+int Address();
 void ReadMem();
 void OprAssign();
 
