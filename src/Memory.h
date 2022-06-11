@@ -34,5 +34,10 @@ int ValueFetch();
 int Address();
 void ReadMem();
 void OprAssign();
+int IsZero(int *a, int n);
+void Clear();
+void Complement();
+void CirculateShift(int n);
+int IsPositive(int *a,int n);
 
 #endif //PDP_8_MEMORY_H

@@ -16,10 +16,15 @@ void boot(){
             indirectCycle();
         }
         else if(c[2] == 1){
-            executeCycle();
+            if(q[7] == 1){
+                RegisterExecuteCycle();
+            }
+            else{
+                MemoryExecuteCycle();
+            }
         }
         else if(c[3] == 1){
-            interuptCycle();
+            interruptCycle();
         }
         increment(SC,2);
     }

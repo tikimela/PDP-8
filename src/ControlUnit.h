@@ -11,7 +11,10 @@ bool S = false;
 
 void fetchCycle();
 void indirectCycle();
-void executeCycle();
+void MemoryExecuteCycle();
+void RegisterExecuteCycle();
 void interruptCycle();
+void MemoryOprPicker();
+void RegisterOprPicker();
 
 #endif //PDP_8_CONTROLUNIT_H
