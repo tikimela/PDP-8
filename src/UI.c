@@ -29,7 +29,7 @@ void Start(char *input){
   ---------------------------------------------------------------------------------- -----*/
 
   void Meni(){
-     printf("\n\nIzaberite iz tabele operaciju koju zelite pokrenuti, i upisite njen kod ispod.\n\n");
+     printf("Izaberite iz tabele operaciju koju zelite pokrenuti, i upisite njen kod ispod.\n\n");
      printf("  --------------------------------------------------------------------------------- ----- \n");
      printf("| Operacija      | Opis operacije                                                 |  Kod  |\n");
      printf("| --------------------------------------------------------------------------------| ----- |\n");
@@ -42,6 +42,8 @@ void Start(char *input){
      printf("| CLEAR MEMORY   | Ciscenje memorije.                                             |   4   |\n");
      printf("| --------------------------------------------------------------------------------- ----- |\n");
      printf("| READ ME        | Otvara READ ME file.                                           |   5   |\n");
+     printf("| --------------------------------------------------------------------------------------- |\n");
+     printf("| EXIT           | Izlaz                                                          |   6   |\n");
      printf(" ---------------------------------------------------------------------------------- -----\n\n");
 
      CodePicker();
@@ -59,11 +61,23 @@ void CodePicker(){
 
     if(n == 1){
         printf("\n");
-        boot(1);
-        printf("----------------------------------\n");
-        printf("Uspjesno je zavrsen program ~\n");
-        printf("----------------------------------\n\n");
-        BackToMenu();
+        if(isThereFile == true){
+            boot(1);
+            printf("----------------------------------\n");
+            printf("Uspjesno je zavrsen program ~\n");
+            printf("----------------------------------\n\n");
+            printf("\n\n");
+
+            BackToMenu();
+        }
+        else{
+            printf("\n");
+            printf("----------------------------------------\n");
+            printf("Niste ucitali file! Pokusajte opet.\n");
+            printf("----------------------------------------\n");
+            Meni();
+            CodePicker();
+        }
 
     }
     else if(n == 2){
@@ -79,11 +93,14 @@ void CodePicker(){
             path[strlen (path) - 1] = '\0';
 
         LoadProgram(path);
+        printf("\n\n");
 
         printf("----------------------------------\n");
         printf("Uspjesno je ucitan file ~\n");
         printf("----------------------------------\n");
+        printf("\n\n");
         BackToMenu();
+
 
     }
     else if(n == 3){
@@ -99,26 +116,34 @@ void CodePicker(){
             path[strlen (path) - 1] = '\0';
 
         DumpMemory();
+        printf("\n\n");
 
         printf("----------------------------------------\n");
         printf("Uspjesno je ostampana memorijska slika ~\n");
         printf("----------------------------------------\n");
+        printf("\n\n");
 
         BackToMenu();
 
     }
     else if(n == 4){
         printf("\n");
-        ClearRAM();
+        ClearMem();
         printf("----------------------------------\n");
         printf("Uspjesno je ociscena memorija ~\n");
         printf("----------------------------------\n");
+        printf("\n\n");
         BackToMenu();
     }
     else if(n == 5){
         printf("\n");
         ReadMe();
         BackToMenu();
+
+    }
+    else if(n == 6){
+        printf("\n");
+        printf("Hvala Vam sto ste koristili moj program!\n");
 
     }
     else{

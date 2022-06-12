@@ -22,6 +22,7 @@ int t[4] = {0, 0, 0, 0};
 int FR[2] = {0,0};
 int q[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 int c[4] = {0, 0, 0, 0};
+bool isThereFile = false;
 
 void CopyReg(int *a, int *b, int n){
     //kopira iz jednog u drugi registar
@@ -80,12 +81,27 @@ void Clear(int *a, int n){
     }
 }
 
-void ClearRAM(){
+void ClearMem(){
     for(int i = 0; i < 4096; i++){
         for(int j = 0; j < WORD_SIZE; j++){
             RAM[i][j] = 0;
         }
     }
+    Clear(PC,12);
+    Clear(OPR,3);
+    Clear(MAR,12);
+    Clear(MBR,WORD_SIZE);
+    Clear(AC,WORD_SIZE);
+    Clear(SC,2);
+    Clear(t,4);
+    Clear(FR,2);
+    Clear(q,8);
+    Clear(c,4);
+    I = 0;
+    E = 0;
+    F = 0;
+    R = 0;
+    isThereFile = false;
 }
 
 void Complement(int *a, int n){

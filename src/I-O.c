@@ -68,6 +68,7 @@ void DumpMemory(char *output){
 }
 
 void LoadProgram(char *input) {
+    isThereFile = true;
     FILE* file = fopen(input, "r");
     fseek(file, 0, SEEK_END);
     long FileLength = ftell(file);
