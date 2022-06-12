@@ -296,6 +296,30 @@ src/PDP-8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/PDP-8.c.s
 .PHONY : src/PDP-8.c.s
 
+src/UI.obj: src/UI.c.obj
+.PHONY : src/UI.obj
+
+# target to build an object file
+src/UI.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/UI.c.obj
+.PHONY : src/UI.c.obj
+
+src/UI.i: src/UI.c.i
+.PHONY : src/UI.i
+
+# target to preprocess a source file
+src/UI.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/UI.c.i
+.PHONY : src/UI.c.i
+
+src/UI.s: src/UI.c.s
+.PHONY : src/UI.s
+
+# target to generate assembly for a file
+src/UI.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/UI.c.s
+.PHONY : src/UI.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -350,6 +374,9 @@ help:
 	@echo ... src/PDP-8.obj
 	@echo ... src/PDP-8.i
 	@echo ... src/PDP-8.s
+	@echo ... src/UI.obj
+	@echo ... src/UI.i
+	@echo ... src/UI.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

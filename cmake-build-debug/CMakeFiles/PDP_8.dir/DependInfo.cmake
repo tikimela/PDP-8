@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "H:/Programiranje/PDP-8/src/Logic.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Logic.c.obj"
   "H:/Programiranje/PDP-8/src/Memory.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Memory.c.obj"
   "H:/Programiranje/PDP-8/src/PDP-8.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/PDP-8.c.obj"
+  "H:/Programiranje/PDP-8/src/UI.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/UI.c.obj"
   "H:/Programiranje/PDP-8/src/main.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

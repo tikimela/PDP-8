@@ -80,6 +80,14 @@ void Clear(int *a, int n){
     }
 }
 
+void ClearRAM(){
+    for(int i = 0; i < 4096; i++){
+        for(int j = 0; j < WORD_SIZE; j++){
+            RAM[i][j] = 0;
+        }
+    }
+}
+
 void Complement(int *a, int n){
     for(int i = 0; i < n; i++){
         if(a[i] == 1){

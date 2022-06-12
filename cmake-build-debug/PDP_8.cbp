@@ -116,6 +116,12 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/PDP-8.h">
 			<Option target="PDP_8"/>
 		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/UI.c">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/UI.h">
+			<Option target="PDP_8"/>
+		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/main.c">
 			<Option target="PDP_8"/>
 		</Unit>

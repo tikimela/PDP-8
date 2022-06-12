@@ -32,7 +32,18 @@ CMakeFiles/PDP_8.dir/src/PDP-8.c.obj: \
  ../src/Logic.h \
  ../src/Memory.h \
  ../src/PDP-8.c \
- ../src/PDP-8.h
+ ../src/PDP-8.h \
+ ../src/UI.h
+CMakeFiles/PDP_8.dir/src/UI.c.obj: \
+ ../src/Arithmetic.h \
+ ../src/ControlUnit.h \
+ ../src/Decoder.h \
+ ../src/I-O.h \
+ ../src/Logic.h \
+ ../src/Memory.h \
+ ../src/PDP-8.h \
+ ../src/UI.c \
+ ../src/UI.h
 CMakeFiles/PDP_8.dir/src/main.c.obj: \
  ../src/Arithmetic.h \
  ../src/ControlUnit.h \
@@ -41,4 +52,5 @@ CMakeFiles/PDP_8.dir/src/main.c.obj: \
  ../src/Logic.h \
  ../src/Memory.h \
  ../src/PDP-8.h \
+ ../src/UI.h \
  ../src/main.c

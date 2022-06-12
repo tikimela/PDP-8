@@ -1,7 +1,13 @@
 #include "PDP-8.h"
 
-void boot(){
-    LoadProgram();
+void boot(int n){
+    if(n == 1){
+        S = true;
+    }
+    else{
+        S = false;
+    }
+
     while(S){
         Decoder2x4(SC,t,S);
         Decoder3x8(OPR,q,S);
@@ -28,5 +34,4 @@ void boot(){
         }
         increment(SC,2);
     }
-    DumpMemory();
 }

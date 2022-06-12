@@ -1,8 +1,8 @@
 #include "I-O.h"
 #include "Memory.h"
 
-void DumpMemory(){
-    FILE* file = fopen("Dump.bin","w");
+void DumpMemory(char *output){
+    FILE* file = fopen(output,"w");
 
     for(int i = 0; i < 4096; i++){
 
@@ -67,8 +67,8 @@ void DumpMemory(){
 
 }
 
-void LoadProgram() {
-    FILE* file = fopen("Program.bin", "r");
+void LoadProgram(char *input) {
+    FILE* file = fopen(input, "r");
     fseek(file, 0, SEEK_END);
     long FileLength = ftell(file);
     rewind(file);

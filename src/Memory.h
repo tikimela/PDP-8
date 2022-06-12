@@ -40,5 +40,6 @@ void Clear(int *a, int n);
 void Complement(int *a, int n);
 void CirculateShift(int n);
 int IsPositive(int *a);
+void ClearRAM();
 
 #endif //PDP_8_MEMORY_H
