@@ -68,7 +68,7 @@ void DumpMemory(){
 }
 
 void LoadProgram() {
-    FILE* file = fopen("program.bin", "r");
+    FILE* file = fopen("Program.bin", "r");
     fseek(file, 0, SEEK_END);
     long FileLength = ftell(file);
     rewind(file);

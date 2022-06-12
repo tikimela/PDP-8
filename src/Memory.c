@@ -25,7 +25,7 @@ int c[4] = {0, 0, 0, 0};
 
 void CopyReg(int *a, int *b, int n){
     //kopira iz jednog u drugi registar
-    //a - to be copied; b - copy; n - word length; m - from where to start copying
+    //a - to be copied; b - copy; n - word length;
     for(int i = 0; i < n; i++){
         b[i] = a[i];
     }
