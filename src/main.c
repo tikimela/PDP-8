@@ -1,4 +1,5 @@
 #include "PDP-8.h"
+#include "getdel.h"
 
 int main(int argc, char **argv) {
 

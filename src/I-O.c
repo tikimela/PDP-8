@@ -1,5 +1,6 @@
 #include "I-O.h"
 #include "Memory.h"
+#include "getdel.h"
 
 void DumpMemory(char *output){
     FILE* file = fopen(output,"w");
@@ -72,11 +73,9 @@ void LoadProgram(char *input) {
     FILE *in = fopen(input, "r");
 
     char *lineStart = NULL;
-    ssize_t lineLength = 0;
     size_t length = 0;
 
-    while((lineLength = getline(&lineStart, &length, in)) != -1) {
-        length = (size_t) lineLength;
+    while(getLine(&lineStart, &length, in)) {
         char *line = lineStart;
         trimRight(line, &length);
         if(length == 0) continue;
@@ -85,7 +84,10 @@ void LoadProgram(char *input) {
         size_t start = 0;
         for(size_t i = 0;i < length;i++) {
             if(!isspace(line[i])) continue;
+            size_t len = i - start;
+
             // Proveri sta je
+
             start = i + 1;
         }
         // Proveri sta je opet
@@ -96,7 +98,7 @@ void LoadProgram(char *input) {
     }
 
     fclose(in);
-    S = true;
+//    S = true;
 }
 
 int trimLeft(char **text, size_t *length) {

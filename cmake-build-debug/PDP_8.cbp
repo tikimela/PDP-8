@@ -80,6 +80,12 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Arithmetic.h">
 			<Option target="PDP_8"/>
 		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/Asembler.cpp">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/Asembler.h">
+			<Option target="PDP_8"/>
+		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/ControlUnit.c">
 			<Option target="PDP_8"/>
 		</Unit>
@@ -120,6 +126,12 @@
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/UI.h">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/getdel.c">
+			<Option target="PDP_8"/>
+		</Unit>
+		<Unit filename="H:/Programiranje/PDP-8/src/getdel.h">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/main.c">

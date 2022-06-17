@@ -320,6 +320,30 @@ src/UI.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/UI.c.s
 .PHONY : src/UI.c.s
 
+src/getdel.obj: src/getdel.c.obj
+.PHONY : src/getdel.obj
+
+# target to build an object file
+src/getdel.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.obj
+.PHONY : src/getdel.c.obj
+
+src/getdel.i: src/getdel.c.i
+.PHONY : src/getdel.i
+
+# target to preprocess a source file
+src/getdel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.i
+.PHONY : src/getdel.c.i
+
+src/getdel.s: src/getdel.c.s
+.PHONY : src/getdel.s
+
+# target to generate assembly for a file
+src/getdel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.s
+.PHONY : src/getdel.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -377,6 +401,9 @@ help:
 	@echo ... src/UI.obj
 	@echo ... src/UI.i
 	@echo ... src/UI.s
+	@echo ... src/getdel.obj
+	@echo ... src/getdel.i
+	@echo ... src/getdel.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
