@@ -41,9 +41,7 @@ void Start(char *input){
      printf("| --------------------------------------------------------------------------------| ----- |\n");
      printf("| CLEAR MEMORY   | Ciscenje memorije.                                             |   4   |\n");
      printf("| --------------------------------------------------------------------------------- ----- |\n");
-     printf("| READ ME        | Otvara READ ME file.                                           |   5   |\n");
-     printf("| --------------------------------------------------------------------------------------- |\n");
-     printf("| EXIT           | Izlaz                                                          |   6   |\n");
+     printf("| EXIT           | Izlaz                                                          |   5   |\n");
      printf(" ---------------------------------------------------------------------------------- -----\n\n");
 
      CodePicker();
@@ -137,11 +135,6 @@ void CodePicker(){
     }
     else if(n == 5){
         printf("\n");
-        ReadMe();
-        BackToMenu();
-
-    }
-    else if(n == 6){
         printf("\n");
         printf("Hvala Vam sto ste koristili moj program!\n");
 
@@ -176,9 +169,6 @@ void Intro(){
       printf("Mirela Abazovic 43/21, C - smjer \n\n");
 }
 
-void ReadMe(){
-    printf("Work in progress\n");
-}
 
 void BackToMenu(){
     int m = 0;

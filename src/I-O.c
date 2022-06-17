@@ -68,34 +68,58 @@ void DumpMemory(char *output){
 }
 
 void LoadProgram(char *input) {
-    isThereFile = true;
-    FILE* file = fopen(input, "r");
-    fseek(file, 0, SEEK_END);
-    long FileLength = ftell(file);
-    rewind(file);
 
-    for(int i = 0; i < FileLength / 2; i++) {
-        uint16_t byte = 0;
-        fread(&byte, sizeof(uint16_t), 1, file);
+    FILE *in = fopen(input, "r");
 
-        RAM[i][0] = (byte >> 7) & 1U;
-        RAM[i][1] = (byte >> 6) & 1U;
-        RAM[i][2] = (byte >> 5) & 1U;
-        RAM[i][3] = (byte >> 4) & 1U;
-        RAM[i][4] = (byte >> 3) & 1U;
-        RAM[i][5] = (byte >> 2) & 1U;
-        RAM[i][6] = (byte >> 1) & 1U;
-        RAM[i][7] = (byte >> 0) & 1U;
-        RAM[i][8] = (byte >> 15) & 1U;
-        RAM[i][9] = (byte >> 14) & 1U;
-        RAM[i][10] = (byte >> 13) & 1U;
-        RAM[i][11] = (byte >> 12) & 1U;
-        RAM[i][12] = (byte >> 11) & 1U;
-        RAM[i][13] = (byte >> 10) & 1U;
-        RAM[i][14] = (byte >> 9) & 1U;
-        RAM[i][15] = (byte >> 8) & 1U;
+    char *lineStart = NULL;
+    ssize_t lineLength = 0;
+    size_t length = 0;
+
+    while((lineLength = getline(&lineStart, &length, in)) != -1) {
+        length = (size_t) lineLength;
+        char *line = lineStart;
+        trimRight(line, &length);
+        if(length == 0) continue;
+        trimLeft(&line, &length);
+
+        size_t start = 0;
+        for(size_t i = 0;i < length;i++) {
+            if(!isspace(line[i])) continue;
+            // Proveri sta je
+            start = i + 1;
+        }
+        // Proveri sta je opet
+
+        printf("Line: \"");
+        printn(line, length);
+        printf("\"\n");
     }
 
-    fclose(file);
+    fclose(in);
     S = true;
+}
+
+int trimLeft(char **text, size_t *length) {
+    size_t i = 0;
+    while(isspace((*text)[0]) && *length) {
+        (*text)++;
+        (*length)--;
+        i++;
+    }
+    return i;
+}
+int trimRight(const char *text, size_t *length) {
+    if(*length == 0) return 0;
+    size_t i = 0;
+    while(isspace(text[*length - 1]) && *length) {
+        (*length)--;
+        i++;
+    }
+    return i;
+}
+
+void printn(const char* string, size_t length) {
+    for(size_t i = 0;i < length;i++) {
+        fputc(string[i], stdout);
+    }
 }

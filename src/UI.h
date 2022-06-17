@@ -6,7 +6,6 @@ void UIStart();
 void Start();
 void Meni();
 void Intro();
-void ReadMe();
 void CodePicker();
 void BackToMenu();
 
