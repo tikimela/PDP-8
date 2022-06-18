@@ -11,7 +11,7 @@ void printArray(int *arr, int n) {
 }
 
 void DumpMemory(char *output){
-    FILE* file = fopen(output,"w");
+    FILE* file = fopen(output,"wb");
 
     for(int i = 0; i < 4096; i++){
 

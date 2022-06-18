@@ -16,10 +16,6 @@ stdbool.h
 ControlUnit.h
 H:/Programiranje/PDP-8/src/ControlUnit.h
 
-H:/Programiranje/PDP-8/src/ControlUnit.c
-ControlUnit.h
-H:/Programiranje/PDP-8/src/ControlUnit.h
-
 H:/Programiranje/PDP-8/src/ControlUnit.h
 Memory.h
 H:/Programiranje/PDP-8/src/Memory.h
@@ -38,9 +34,33 @@ H:/Programiranje/PDP-8/src/math.h
 
 H:/Programiranje/PDP-8/src/Decoder.h
 
+H:/Programiranje/PDP-8/src/I-O.c
+I-O.h
+H:/Programiranje/PDP-8/src/I-O.h
+Memory.h
+H:/Programiranje/PDP-8/src/Memory.h
+getdel.h
+H:/Programiranje/PDP-8/src/getdel.h
+string.h
+-
+
+H:/Programiranje/PDP-8/src/I-O.h
+inttypes.h
+H:/Programiranje/PDP-8/src/inttypes.h
+stdio.h
+H:/Programiranje/PDP-8/src/stdio.h
+stdlib.h
+H:/Programiranje/PDP-8/src/stdlib.h
+ctype.h
+-
+Asembler.h
+H:/Programiranje/PDP-8/src/Asembler.h
+
 H:/Programiranje/PDP-8/src/Logic.h
 
 H:/Programiranje/PDP-8/src/Memory.h
 stdbool.h
 H:/Programiranje/PDP-8/src/stdbool.h
+
+H:/Programiranje/PDP-8/src/getdel.h
 

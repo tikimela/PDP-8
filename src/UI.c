@@ -99,7 +99,6 @@ void CodePicker(){
         printf("\n\n");
         BackToMenu();
 
-
     }
     else if(n == 3){
         printf("\n");
