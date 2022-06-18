@@ -1,6 +1,0 @@
-LDA 4
-ADD* 5
-STA 4
-HLT
-DEC 10
-DEC -9
