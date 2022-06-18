@@ -3,6 +3,8 @@
 #include "Decoder.h"
 #include <stdbool.h>
 #include "Logic.h"
+#include "Asembler.h"
+#include "math.h"
 
 #ifndef PDP_8_CONTROLUNIT_H
 #define PDP_8_CONTROLUNIT_H

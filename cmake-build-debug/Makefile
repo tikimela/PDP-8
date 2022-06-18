@@ -152,6 +152,30 @@ src/Arithmetic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Arithmetic.c.s
 .PHONY : src/Arithmetic.c.s
 
+src/Asembler.obj: src/Asembler.c.obj
+.PHONY : src/Asembler.obj
+
+# target to build an object file
+src/Asembler.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Asembler.c.obj
+.PHONY : src/Asembler.c.obj
+
+src/Asembler.i: src/Asembler.c.i
+.PHONY : src/Asembler.i
+
+# target to preprocess a source file
+src/Asembler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Asembler.c.i
+.PHONY : src/Asembler.c.i
+
+src/Asembler.s: src/Asembler.c.s
+.PHONY : src/Asembler.s
+
+# target to generate assembly for a file
+src/Asembler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/Asembler.c.s
+.PHONY : src/Asembler.c.s
+
 src/ControlUnit.obj: src/ControlUnit.c.obj
 .PHONY : src/ControlUnit.obj
 
@@ -380,6 +404,9 @@ help:
 	@echo ... src/Arithmetic.obj
 	@echo ... src/Arithmetic.i
 	@echo ... src/Arithmetic.s
+	@echo ... src/Asembler.obj
+	@echo ... src/Asembler.i
+	@echo ... src/Asembler.s
 	@echo ... src/ControlUnit.obj
 	@echo ... src/ControlUnit.i
 	@echo ... src/ControlUnit.s

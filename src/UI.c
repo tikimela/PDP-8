@@ -113,7 +113,7 @@ void CodePicker(){
         if ((strlen(path) > 0) && (path[strlen (path) - 1] == '\n'))
             path[strlen (path) - 1] = '\0';
 
-        DumpMemory();
+        DumpMemory(path);
         printf("\n\n");
 
         printf("----------------------------------------\n");

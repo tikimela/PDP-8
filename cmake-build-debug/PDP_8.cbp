@@ -80,7 +80,7 @@
 		<Unit filename="H:/Programiranje/PDP-8/src/Arithmetic.h">
 			<Option target="PDP_8"/>
 		</Unit>
-		<Unit filename="H:/Programiranje/PDP-8/src/Asembler.cpp">
+		<Unit filename="H:/Programiranje/PDP-8/src/Asembler.c">
 			<Option target="PDP_8"/>
 		</Unit>
 		<Unit filename="H:/Programiranje/PDP-8/src/Asembler.h">

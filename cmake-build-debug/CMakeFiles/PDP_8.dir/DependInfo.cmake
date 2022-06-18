@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "H:/Programiranje/PDP-8/src/Arithmetic.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj"
+  "H:/Programiranje/PDP-8/src/Asembler.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Asembler.c.obj"
   "H:/Programiranje/PDP-8/src/ControlUnit.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj"
   "H:/Programiranje/PDP-8/src/Decorder.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
   "H:/Programiranje/PDP-8/src/I-O.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/I-O.c.obj"

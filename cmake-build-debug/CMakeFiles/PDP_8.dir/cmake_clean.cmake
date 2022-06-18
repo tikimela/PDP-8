@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj"
+  "CMakeFiles/PDP_8.dir/src/Asembler.c.obj"
   "CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj"
   "CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
   "CMakeFiles/PDP_8.dir/src/I-O.c.obj"

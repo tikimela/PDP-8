@@ -20,4 +20,6 @@ int add(int *a, int *b, int *f, int carry, int n);
 
 void increment(int *a,int n);
 
+int min(int a, int b);
+
 #endif //PDP_8_ARITHMETIC_H

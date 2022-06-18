@@ -5,8 +5,17 @@ CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj: \
  ../src/Arithmetic.c \
  ../src/Arithmetic.h \
  ../src/Logic.h
+CMakeFiles/PDP_8.dir/src/Asembler.c.obj: \
+ ../src/Arithmetic.h \
+ ../src/Asembler.c \
+ ../src/Asembler.h \
+ ../src/ControlUnit.h \
+ ../src/Decoder.h \
+ ../src/Logic.h \
+ ../src/Memory.h
 CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj: \
  ../src/Arithmetic.h \
+ ../src/Asembler.h \
  ../src/ControlUnit.c \
  ../src/ControlUnit.h \
  ../src/Decoder.h \
@@ -16,9 +25,13 @@ CMakeFiles/PDP_8.dir/src/Decorder.c.obj: \
  ../src/Decoder.h \
  ../src/Decorder.c
 CMakeFiles/PDP_8.dir/src/I-O.c.obj: \
+ ../src/Arithmetic.h \
  ../src/Asembler.h \
+ ../src/ControlUnit.h \
+ ../src/Decoder.h \
  ../src/I-O.c \
  ../src/I-O.h \
+ ../src/Logic.h \
  ../src/Memory.h \
  ../src/getdel.h
 CMakeFiles/PDP_8.dir/src/Logic.c.obj: \

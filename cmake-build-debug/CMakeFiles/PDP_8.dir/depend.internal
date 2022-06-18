@@ -5,8 +5,17 @@ CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj
  H:/Programiranje/PDP-8/src/Arithmetic.c
  H:/Programiranje/PDP-8/src/Arithmetic.h
  H:/Programiranje/PDP-8/src/Logic.h
+CMakeFiles/PDP_8.dir/src/Asembler.c.obj
+ H:/Programiranje/PDP-8/src/Arithmetic.h
+ H:/Programiranje/PDP-8/src/Asembler.c
+ H:/Programiranje/PDP-8/src/Asembler.h
+ H:/Programiranje/PDP-8/src/ControlUnit.h
+ H:/Programiranje/PDP-8/src/Decoder.h
+ H:/Programiranje/PDP-8/src/Logic.h
+ H:/Programiranje/PDP-8/src/Memory.h
 CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj
  H:/Programiranje/PDP-8/src/Arithmetic.h
+ H:/Programiranje/PDP-8/src/Asembler.h
  H:/Programiranje/PDP-8/src/ControlUnit.c
  H:/Programiranje/PDP-8/src/ControlUnit.h
  H:/Programiranje/PDP-8/src/Decoder.h
@@ -16,9 +25,13 @@ CMakeFiles/PDP_8.dir/src/Decorder.c.obj
  H:/Programiranje/PDP-8/src/Decoder.h
  H:/Programiranje/PDP-8/src/Decorder.c
 CMakeFiles/PDP_8.dir/src/I-O.c.obj
+ H:/Programiranje/PDP-8/src/Arithmetic.h
  H:/Programiranje/PDP-8/src/Asembler.h
+ H:/Programiranje/PDP-8/src/ControlUnit.h
+ H:/Programiranje/PDP-8/src/Decoder.h
  H:/Programiranje/PDP-8/src/I-O.c
  H:/Programiranje/PDP-8/src/I-O.h
+ H:/Programiranje/PDP-8/src/Logic.h
  H:/Programiranje/PDP-8/src/Memory.h
  H:/Programiranje/PDP-8/src/getdel.h
 CMakeFiles/PDP_8.dir/src/Logic.c.obj

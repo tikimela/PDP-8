@@ -31,3 +31,8 @@ void increment(int *a,int n){
 
     add(a,b,a,0,n);
 }
+
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+

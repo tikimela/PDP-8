@@ -75,7 +75,7 @@ void MemoryOprPicker(){
     }
     else if(q[1] == 1){
         //ADD
-        E = add(AC,MBR,AC,0,WORD_SIZE);
+        E = add(&AC[4],&MBR[4],&AC[4],0,12);
     }
     else if(q[2] == 1){
         //LDA

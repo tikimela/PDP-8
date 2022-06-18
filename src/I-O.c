@@ -1,6 +1,14 @@
 #include "I-O.h"
 #include "Memory.h"
 #include "getdel.h"
+#include <string.h>
+
+void printArray(int *arr, int n) {
+    for(int i = 0;i < n;i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
 
 void DumpMemory(char *output){
     FILE* file = fopen(output,"w");
@@ -57,23 +65,31 @@ void DumpMemory(char *output){
         if(RAM[i][15] == 1){
             byte = byte | 1UL << 0;
         }
-        uint16_t result;
+        uint16_t result = 0;
         result = byte >> 8;
         result += (byte & 0xFF) << 8;
+
+        if(i < 12) {
+            printf("Result: %6" PRIu16 ", byte: %6" PRIu16 ", Bytes: ", result, byte);
+            printArray(RAM[i], WORD_SIZE);
+        }
 
         fwrite(&result, sizeof(uint16_t), 1, file);
     }
 
     fclose(file);
-
+    isThereFile = false;
 }
 
 void LoadProgram(char *input) {
-
+    isThereFile = true;
     FILE *in = fopen(input, "r");
 
     char *lineStart = NULL;
     size_t length = 0;
+
+    int startAddress = 0;
+    int address = startAddress;
 
     while(getLine(&lineStart, &length, in)) {
         char *line = lineStart;
@@ -83,22 +99,24 @@ void LoadProgram(char *input) {
 
         size_t start = 0;
         for(size_t i = 0;i < length;i++) {
+            if(i > 0 && line[i - 1] == ',' && !isspace(line[i])) {
+                if(WordReader(line, start, i, length, address, &startAddress, &address)) address++;
+                start = i;
+                continue;
+            }
+
             if(!isspace(line[i])) continue;
-            size_t len = i - start;
-
-            // Proveri sta je
-
+            if(WordReader(line, start, i, length, address, &startAddress, &address)) address++;
             start = i + 1;
         }
-        // Proveri sta je opet
-
-        printf("Line: \"");
-        printn(line, length);
-        printf("\"\n");
+        if(WordReader(line, start, length, length, address, &startAddress, &address)) address++;
     }
 
+    LabelFixer(startAddress);
+
     fclose(in);
-//    S = true;
+    isThereFile = true;
+    S = true;
 }
 
 int trimLeft(char **text, size_t *length) {

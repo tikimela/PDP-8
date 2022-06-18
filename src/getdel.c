@@ -21,6 +21,7 @@ bool getLine(char **lineptr, size_t *n, FILE *stream) {
         c = getc(stream);
         if(c == '\n' || c == EOF) {
             *n = count;
+            if(count == 0 && c == EOF) return false;
             return true;
         }
         (*lineptr)[count] = c;
