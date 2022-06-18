@@ -65,11 +65,6 @@ int IsZero(int *a, int n){
     return 1;
 }
 
-/*void ReadMem(function()){
-    //cita liniju koda iz RAM-a sa adrese iz MAR-a
-    CopyReg(RAM[AddressFetch()],MBR,16,0);
-}*/
-
 void OprAssign(){
     CopyReg(MBR,&I,1);
     CopyReg(&MBR[1],OPR,3);

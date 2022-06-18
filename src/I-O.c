@@ -3,13 +3,6 @@
 #include "getdel.h"
 #include <string.h>
 
-void printArray(int *arr, int n) {
-    for(int i = 0;i < n;i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
 void DumpMemory(char *output){
     FILE* file = fopen(output,"wb");
 
@@ -69,10 +62,6 @@ void DumpMemory(char *output){
         result = byte >> 8;
         result += (byte & 0xFF) << 8;
 
-        if(i < 12) {
-            printf("Result: %6" PRIu16 ", byte: %6" PRIu16 ", Bytes: ", result, byte);
-            printArray(RAM[i], WORD_SIZE);
-        }
 
         fwrite(&result, sizeof(uint16_t), 1, file);
     }
@@ -136,10 +125,4 @@ int trimRight(const char *text, size_t *length) {
         i++;
     }
     return i;
-}
-
-void printn(const char* string, size_t length) {
-    for(size_t i = 0;i < length;i++) {
-        fputc(string[i], stdout);
-    }
 }

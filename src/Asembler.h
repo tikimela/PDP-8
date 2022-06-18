@@ -10,11 +10,9 @@ bool WordReader(char* line,int beginning, int end, int length, int address, int 
 void LabelFixer(int startAddress);
 void OperationChecker(char* opr, int address);
 int CharCompare(char* opr, char* opr2,int len);
-char* toWord(char* a, int pocetak, int n);
 int IsNum(char* opr, int len);
 void toRAM(char* a,int pocetak, int n, int address);
 void BinToRAM(int* a, int pocetak, int n, int address);
-void DecHexWord(char* word);
 int StrToDec(char* word,int len);
 int HexToDec(char* word,int len);
 

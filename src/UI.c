@@ -29,6 +29,7 @@ void Start(char *input){
   ---------------------------------------------------------------------------------- -----*/
 
   void Meni(){
+     printf("\n");
      printf("Izaberite iz tabele operaciju koju zelite pokrenuti, i upisite njen kod ispod.\n\n");
      printf("  --------------------------------------------------------------------------------- ----- \n");
      printf("| Operacija      | Opis operacije                                                 |  Kod  |\n");

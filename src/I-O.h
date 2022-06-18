@@ -14,6 +14,5 @@ void DumpMemory(char *path);
 void LoadProgram(char *path);
 int trimLeft(char **text, size_t *length);
 int trimRight(const char *text, size_t *length);
-void printn(const char* string, size_t length);
 
 #endif //PDP_8_I_O_H
