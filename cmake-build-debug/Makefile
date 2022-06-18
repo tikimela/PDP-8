@@ -344,29 +344,29 @@ src/UI.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/UI.c.s
 .PHONY : src/UI.c.s
 
-src/getdel.obj: src/getdel.c.obj
-.PHONY : src/getdel.obj
+src/input.obj: src/input.c.obj
+.PHONY : src/input.obj
 
 # target to build an object file
-src/getdel.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.obj
-.PHONY : src/getdel.c.obj
+src/input.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/input.c.obj
+.PHONY : src/input.c.obj
 
-src/getdel.i: src/getdel.c.i
-.PHONY : src/getdel.i
+src/input.i: src/input.c.i
+.PHONY : src/input.i
 
 # target to preprocess a source file
-src/getdel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.i
-.PHONY : src/getdel.c.i
+src/input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/input.c.i
+.PHONY : src/input.c.i
 
-src/getdel.s: src/getdel.c.s
-.PHONY : src/getdel.s
+src/input.s: src/input.c.s
+.PHONY : src/input.s
 
 # target to generate assembly for a file
-src/getdel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/getdel.c.s
-.PHONY : src/getdel.c.s
+src/input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PDP_8.dir\build.make CMakeFiles/PDP_8.dir/src/input.c.s
+.PHONY : src/input.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -428,9 +428,9 @@ help:
 	@echo ... src/UI.obj
 	@echo ... src/UI.i
 	@echo ... src/UI.s
-	@echo ... src/getdel.obj
-	@echo ... src/getdel.i
-	@echo ... src/getdel.s
+	@echo ... src/input.obj
+	@echo ... src/input.i
+	@echo ... src/input.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -195,18 +195,18 @@ CMakeFiles/PDP_8.dir/src/Asembler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/Asembler.c.s"
 	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\Asembler.c -o CMakeFiles\PDP_8.dir\src\Asembler.c.s
 
-CMakeFiles/PDP_8.dir/src/getdel.c.obj: CMakeFiles/PDP_8.dir/flags.make
-CMakeFiles/PDP_8.dir/src/getdel.c.obj: ../src/getdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PDP_8.dir/src/getdel.c.obj"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PDP_8.dir\src\getdel.c.obj -c H:\Programiranje\PDP-8\src\getdel.c
+CMakeFiles/PDP_8.dir/src/input.c.obj: CMakeFiles/PDP_8.dir/flags.make
+CMakeFiles/PDP_8.dir/src/input.c.obj: ../src/input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\Programiranje\PDP-8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PDP_8.dir/src/input.c.obj"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PDP_8.dir\src\input.c.obj -c H:\Programiranje\PDP-8\src\input.c
 
-CMakeFiles/PDP_8.dir/src/getdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PDP_8.dir/src/getdel.c.i"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\Programiranje\PDP-8\src\getdel.c > CMakeFiles\PDP_8.dir\src\getdel.c.i
+CMakeFiles/PDP_8.dir/src/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PDP_8.dir/src/input.c.i"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\Programiranje\PDP-8\src\input.c > CMakeFiles\PDP_8.dir\src\input.c.i
 
-CMakeFiles/PDP_8.dir/src/getdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/getdel.c.s"
-	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\getdel.c -o CMakeFiles\PDP_8.dir\src\getdel.c.s
+CMakeFiles/PDP_8.dir/src/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PDP_8.dir/src/input.c.s"
+	C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\Programiranje\PDP-8\src\input.c -o CMakeFiles\PDP_8.dir\src\input.c.s
 
 # Object files for target PDP_8
 PDP_8_OBJECTS = \
@@ -220,7 +220,7 @@ PDP_8_OBJECTS = \
 "CMakeFiles/PDP_8.dir/src/I-O.c.obj" \
 "CMakeFiles/PDP_8.dir/src/UI.c.obj" \
 "CMakeFiles/PDP_8.dir/src/Asembler.c.obj" \
-"CMakeFiles/PDP_8.dir/src/getdel.c.obj"
+"CMakeFiles/PDP_8.dir/src/input.c.obj"
 
 # External object files for target PDP_8
 PDP_8_EXTERNAL_OBJECTS =
@@ -235,7 +235,7 @@ PDP_8.exe: CMakeFiles/PDP_8.dir/src/Logic.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/I-O.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/UI.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/src/Asembler.c.obj
-PDP_8.exe: CMakeFiles/PDP_8.dir/src/getdel.c.obj
+PDP_8.exe: CMakeFiles/PDP_8.dir/src/input.c.obj
 PDP_8.exe: CMakeFiles/PDP_8.dir/build.make
 PDP_8.exe: CMakeFiles/PDP_8.dir/linklibs.rsp
 PDP_8.exe: CMakeFiles/PDP_8.dir/objects1.rsp
