@@ -1,5 +1,5 @@
 #include "PDP-8.h"
-#include "getdel.h"
+#include "input.h"
 #include "Asembler.h"
 
 int main(int argc, char **argv) {

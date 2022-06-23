@@ -112,7 +112,7 @@ bool WordReader(char* line,int beginning, int end, int length, int address, int 
     }
     else if(potrVred == true) {
         potrVred = false;
-        if(IsNum(word,len)) {
+        if(IsNum(word,len,false)) {
             int binLen = 0;
             int *bin = StrToBin(word, len, 0, address, &binLen);
             int start = binLen > 12 ? binLen - 12 : 0;
@@ -299,7 +299,7 @@ int CharCompare(char* opr, char* opr2,int len){
     return 1;
 }
 
-int IsNum(char* opr, int len){
+int IsNum(char* opr, int len,bool provjera){
     int br = 0;
     char* abc = "ABCDEFabcdef";
 
@@ -312,6 +312,12 @@ int IsNum(char* opr, int len){
     if(br == len){
         return 1;
     }
+
+    if(provjera != true){
+        return false;
+    }
+
+
 
     for(int j = start; j < len; j++){
         for(int i = 0; i < 12; i++){
