@@ -162,4 +162,5 @@ void RegisterOprPicker(){
         //HLT
         S = false;
     }
+    F = 0;
 }

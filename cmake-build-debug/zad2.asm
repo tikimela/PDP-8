@@ -1,0 +1,31 @@
+LDA a 
+CMA 
+INC 
+ADD b 
+SZA 
+BSA 210
+LDA a 
+ADD b 
+STA y 
+HLT 
+DEC 0 
+LDA a 
+STA y 
+LDA a 
+CMA
+INC 
+ADD b 
+SZA 
+BSA 222  
+LDA y 
+ADD b 
+HLT 
+LDA a 
+INC 
+STA a  
+ADD y 
+STA y  
+BUN 213 
+a, DEC 2
+b, DEC 6
+y, DEC 0
