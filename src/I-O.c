@@ -1,6 +1,6 @@
 #include "I-O.h"
 #include "Memory.h"
-#include "getdel.h"
+#include "input.h"
 #include <string.h>
 
 void DumpMemory(char *output){

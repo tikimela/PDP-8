@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "H:/Programiranje/PDP-8/src/Arithmetic.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj"
-  "H:/Programiranje/PDP-8/src/Asembler.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Asembler.c.obj"
-  "H:/Programiranje/PDP-8/src/ControlUnit.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj"
-  "H:/Programiranje/PDP-8/src/Decorder.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
-  "H:/Programiranje/PDP-8/src/I-O.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/I-O.c.obj"
-  "H:/Programiranje/PDP-8/src/Logic.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Logic.c.obj"
-  "H:/Programiranje/PDP-8/src/Memory.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Memory.c.obj"
-  "H:/Programiranje/PDP-8/src/PDP-8.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/PDP-8.c.obj"
-  "H:/Programiranje/PDP-8/src/UI.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/UI.c.obj"
-  "H:/Programiranje/PDP-8/src/input.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/input.c.obj"
-  "H:/Programiranje/PDP-8/src/main.c" "H:/Programiranje/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/main.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/Arithmetic.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Arithmetic.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/Asembler.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Asembler.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/ControlUnit.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/ControlUnit.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/Decorder.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Decorder.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/I-O.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/I-O.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/Logic.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Logic.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/Memory.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/Memory.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/PDP-8.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/PDP-8.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/UI.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/UI.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/input.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/input.c.obj"
+  "H:/Programiranje/Projekti/Principi programiranja/PDP-8/src/main.c" "H:/Programiranje/Projekti/Principi programiranja/PDP-8/cmake-build-debug/CMakeFiles/PDP_8.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
