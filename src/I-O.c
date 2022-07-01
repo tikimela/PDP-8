@@ -101,7 +101,12 @@ void LoadProgram(char *input) {
         if(WordReader(line, start, length, length, address, &startAddress, &address)) address++;
     }
 
-    LabelFixer(startAddress);
+    LabelFixer();
+
+    int binLen = 0;
+    int *bin = DecHexToBin(startAddress, 0, &binLen);
+    int start = binLen > 12 ? binLen - 12 : 0;
+    CopyReg(&bin[start], PC, 12);
 
     fclose(in);
     isThereFile = true;

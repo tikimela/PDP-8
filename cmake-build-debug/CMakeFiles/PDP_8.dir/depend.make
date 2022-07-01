@@ -33,7 +33,7 @@ CMakeFiles/PDP_8.dir/src/I-O.c.obj: \
  ../src/I-O.h \
  ../src/Logic.h \
  ../src/Memory.h \
- ../src/getdel.h
+ ../src/input.h
 CMakeFiles/PDP_8.dir/src/Logic.c.obj: \
  ../src/Logic.c
 CMakeFiles/PDP_8.dir/src/Memory.c.obj: \
@@ -61,8 +61,8 @@ CMakeFiles/PDP_8.dir/src/UI.c.obj: \
  ../src/PDP-8.h \
  ../src/UI.c \
  ../src/UI.h
-CMakeFiles/PDP_8.dir/src/getdel.c.obj: \
- ../src/getdel.c
+CMakeFiles/PDP_8.dir/src/input.c.obj: \
+ ../src/input.c
 CMakeFiles/PDP_8.dir/src/main.c.obj: \
  ../src/Arithmetic.h \
  ../src/Asembler.h \
@@ -73,5 +73,5 @@ CMakeFiles/PDP_8.dir/src/main.c.obj: \
  ../src/Memory.h \
  ../src/PDP-8.h \
  ../src/UI.h \
- ../src/getdel.h \
+ ../src/input.h \
  ../src/main.c

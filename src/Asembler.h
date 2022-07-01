@@ -7,7 +7,7 @@
 #include "ControlUnit.h"
 
 bool WordReader(char* line,int beginning, int end, int length, int address, int *pStartAddress, int *pAddress);
-void LabelFixer(int startAddress);
+void LabelFixer();
 void OperationChecker(char* opr, int address);
 int CharCompare(char* opr, char* opr2,int len);
 int IsNum(char* opr, int len, bool provjera);

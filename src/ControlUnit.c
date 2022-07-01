@@ -38,9 +38,11 @@ void indirectCycle(){
 
 void MemoryExecuteCycle(){
     if(t[0] == 1){
+        if(q[4]) return;
         ValueFetch();
     }
     else if(t[1] == 1){
+        if(q[4]) return;
         CopyReg(RAM[Address()],MBR,WORD_SIZE);
     }
     else if(t[2] == 1){
@@ -58,6 +60,7 @@ void RegisterExecuteCycle(){
     }
     else{
         RegisterOprPicker();
+        F = 0;
     }
 }
 
@@ -75,7 +78,7 @@ void MemoryOprPicker(){
     }
     else if(q[1] == 1){
         //ADD
-        E = add(&AC[4],&MBR[4],&AC[4],0,12);
+        E = add(AC,MBR,AC,0,WORD_SIZE);
     }
     else if(q[2] == 1){
         //LDA
@@ -136,7 +139,7 @@ void RegisterOprPicker(){
     }
     else if(MBR[11] == 1){
         //SPA
-        if(IsPositive(AC) == 1){
+        if(IsPositive(AC) == 1 && !IsZero(AC,WORD_SIZE)){
             increment(PC,12);
         }
     }

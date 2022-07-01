@@ -23,7 +23,7 @@ void addLabelAddress(char *label, int len, int address) {
         free(labelAddresses);
     }
     LabelList.labelAddresses[LabelList.laCount].label = calloc(len, sizeof(char));
-    strncpy(LabelList.labelAddresses[LabelList.laCount].label, label, len);
+    strncpy(LabelList.labelAddresses[LabelList.laCount].label, label, len - 1);
     LabelList.labelAddresses[LabelList.laCount].address = address;
     LabelList.laCount++;
 }
@@ -84,10 +84,10 @@ bool WordReader(char* line,int beginning, int end, int length, int address, int 
 
         int binLen = 0;
         int *bin = StrToBin(word, len, DecHex, address, &binLen);
-        int start = binLen > 12 ? binLen - 12 : 0;
-        int ramStart = binLen > 12 ? 0 : 12 - binLen;
+        int start = binLen > 16 ? binLen - 16 : 0;
+        int ramStart = binLen > 16 ? 0 : 16 - binLen;
 
-        BinToRAM(&bin[start], ramStart + 4, binLen > 12 ? 12 : binLen, address);
+        BinToRAM(&bin[start], ramStart, binLen > 16 ? 16 : binLen, address);
         return true;
     }
     else if(line[end - 1] == '*'){
@@ -134,14 +134,18 @@ bool WordReader(char* line,int beginning, int end, int length, int address, int 
     }
 }
 
-void LabelFixer(int startAddress) {
+void LabelFixer() {
+//     for(size_t j = 0;j < LabelList.laCount;j++) {
+//       printf("Location[%zu]: %s - %d\n", j, LabelList.labelAddresses[j].label, LabelList.labelAddresses[j].address);
+//     }
+
     for(int i = 0;i < LabelList.plCount;i++) {
         LabelAddress *pl = &LabelList.programLabels[i];
         int len = strnlen(pl->label, 255);
         for(int j = 0;j < LabelList.laCount;j++) {
             LabelAddress *la = &LabelList.labelAddresses[j];
             if(CharCompare(pl->label, la->label, len) == 1) {
-                int address = startAddress + pl->address;
+                int address = pl->address;
 
                 int binLen = 0;
                 int *bin = DecHexToBin(la->address, address, &binLen);
@@ -395,7 +399,7 @@ int* StrToBin(char* word, int len, int DecHex, int address, int *sumLen) {
 int* DecHexToBin(int sum, int address, int *sumLen) {
     int negative = sum < 0;
     if(negative) sum = - sum;
-    *sumLen = 12;
+    *sumLen = 16;
     int* bin = calloc(*sumLen, sizeof(int));
 
     int k = 0;

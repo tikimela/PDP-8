@@ -33,7 +33,7 @@ CMakeFiles/PDP_8.dir/src/I-O.c.obj
  H:/Programiranje/PDP-8/src/I-O.h
  H:/Programiranje/PDP-8/src/Logic.h
  H:/Programiranje/PDP-8/src/Memory.h
- H:/Programiranje/PDP-8/src/getdel.h
+ H:/Programiranje/PDP-8/src/input.h
 CMakeFiles/PDP_8.dir/src/Logic.c.obj
  H:/Programiranje/PDP-8/src/Logic.c
 CMakeFiles/PDP_8.dir/src/Memory.c.obj
@@ -61,8 +61,8 @@ CMakeFiles/PDP_8.dir/src/UI.c.obj
  H:/Programiranje/PDP-8/src/PDP-8.h
  H:/Programiranje/PDP-8/src/UI.c
  H:/Programiranje/PDP-8/src/UI.h
-CMakeFiles/PDP_8.dir/src/getdel.c.obj
- H:/Programiranje/PDP-8/src/getdel.c
+CMakeFiles/PDP_8.dir/src/input.c.obj
+ H:/Programiranje/PDP-8/src/input.c
 CMakeFiles/PDP_8.dir/src/main.c.obj
  H:/Programiranje/PDP-8/src/Arithmetic.h
  H:/Programiranje/PDP-8/src/Asembler.h
@@ -73,5 +73,5 @@ CMakeFiles/PDP_8.dir/src/main.c.obj
  H:/Programiranje/PDP-8/src/Memory.h
  H:/Programiranje/PDP-8/src/PDP-8.h
  H:/Programiranje/PDP-8/src/UI.h
- H:/Programiranje/PDP-8/src/getdel.h
+ H:/Programiranje/PDP-8/src/input.h
  H:/Programiranje/PDP-8/src/main.c
